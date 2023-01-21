@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=" https://www.fuckupnights.com/blog/failure-leads-to-success-right/"> -->
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function add(){
+       
+         value1 = Number(document.getElementById("one").value);
+         
+         value2 = Number(document.getElementById("two").value);
+        result=value1+value2;
+        document.getElementById("result").innerHTML=result
+    }
+    function sub(){
+       
+       value1 = Number(document.getElementById("one").value);
+       
+       value2 = Number(document.getElementById("two").value);
+      result=value1-value2;
+      document.getElementById("result").innerHTML=result
+  }
+  function multi(){
+       
+       value1 = Number(document.getElementById("one").value);
+       
+       value2 = Number(document.getElementById("two").value);
+      result=value1*value2;
+      document.getElementById("result").innerHTML=result
+  }
+  function div(){
+       
+       value1 = Number(document.getElementById("one").value);
+       
+       value2 = Number(document.getElementById("two").value);
+      result=value1/value2;
+      document.getElementById("result").innerHTML=result
+  }
+</script>
+<style>
+    body{
+        background-image: url("https://cdn.pixabay.com/photo/2016/10/14/19/21/canyon-1740973__340.jpg");
+        /* background-color: blue;  */
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 100;       
+        margin: 0px;
+        padding: 0px;
+
+
+    }   
+
+    .heading {
+        color: white;
+        text-align: center;
+        font-size: large;
+    }
+    .form {
+        background: none;        
+        border: black solid;
+        display: inline-block;       
+        margin-left: 25%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: 50%;
+    }
+    .form text{
+        display: inline-block;        
+    }
+    .form label {
+        color: aqua;
+        display: inline-flexbox;
+        font-size: 30px;
+        padding-left: 60px;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* text-align: center;       */
+        
+    }
+    .form input {
+        background-color: white;
+        border: white solid;
+        color:black;
+        padding: 5px;
+        font-size: 25px;
+
+    }
+    .result {
+        display: inline-block;
+        color: white;
+        text-align: left;       
+        margin-top: 20px;
+    }
+    .result span{
+        font-size: 20px;
+    }
+    .container span {
+       
+        color: black;
+        display: inline-block;
+        padding-left: 300px;        
+        justify-content: right;
+        margin: 20px; 
+    }
+    .container button{       
+        font-size: 20px;
+                
+    }
+    .footer {
+        color: cyan;
+        font-family: "Times New Roman", Times, serif;
+        text-align: right;
+        padding-right: 30px;
+        font-size: 30px;
+    }
+    
+</style>
+
+<body >
+    
+    <div class="background-image">
+
+    
+    <div class="heading">
+        <h1><u>My Calculator</u></h1>
+    </div>
+    <div class="form">
+        <div>
+            <label for="fname">Enter 1st Number&nbsp</t>  </label>
+            <input type="text" id="one" placeholder="Enter 1st Number">
+
+        </div><br>
+        <div>
+            <label for="fname" >Enter 2nd Number </label>
+            <input type="text" id="two" placeholder="Enter 2ndt Number">
+
+        </div>
+        <div class="result">
+            <label >Result:</label>:<b><span id="result"></span></b>
+
+        </div><br>
+        <div class="container">
+            <span>
+            <button type="submit" onclick="add()" ><b>+</b></button>
+           
+            <button type="submit" onclick="sub()"><b>-</b></button>
+        
+            <button type="submit" onclick="multi()"><b>*</b></button>
+        
+            <button type="submit" onclick="div()"><b>/</b></button>
+            </span>
+            <div class="footer"> Asad Shafiq</div>
+
+
+
+
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
